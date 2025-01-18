@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  node-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: google-sheets-app
+    restart: unless-stopped
+    volumes:
+      - .:/app
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json
+    networks:
+      - app-network
+
+
+networks:
+  app-network:
+    driver: bridge
