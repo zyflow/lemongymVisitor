@@ -21,8 +21,8 @@ COPY . .
 ENV GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json
 
 # Expose port (if the app serves content, otherwise remove)
-EXPOSE 8080
+EXPOSE 3005
 
 # Define the command to run the app
-CMD ["node", "index.js"]
-#CMD ["sh", "-c", "tail -f /dev/null"]
+#CMD ["node", "index.js"]
+CMD ["sh", "-c", "tail -f /dev/null"]
