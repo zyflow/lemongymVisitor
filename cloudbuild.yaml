@@ -42,7 +42,7 @@ substitutions:
   _DEPLOY_REGION: europe-north1
   _AR_HOSTNAME: europe-north1-docker.pkg.dev
   _PLATFORM: managed
-  _TRIGGER_ID: 8c50e922-cfa9-4bf0-8d54-154fe7d10214
+  _TRIGGER_ID: 5fdd9b06-064a-4d0a-8d36-1cdc76ec325a
 tags:
   - gcp-cloud-build-deploy-cloud-run
   - gcp-cloud-build-deploy-cloud-run-managed

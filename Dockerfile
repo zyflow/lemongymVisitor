@@ -1,11 +1,8 @@
 # Use Node.js LTS image
 FROM node:18
 
-# Set the working directory inside the container
 WORKDIR /app
 
-RUN npm init -y
-# Copy package.json and package-lock.json
 COPY package*.json ./
 
 # Install dependencies
